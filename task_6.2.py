@@ -9,3 +9,24 @@
 
 # Hint: Sort using key = lambda x: x[2]
 # Tip: Test with 5-6 edges to check order.
+
+
+def sort_edges_by_weight(edges):
+    """
+    Sorts a list of edges (u, v, w) by their weight w.
+    
+    Parameters:
+    edges : list of tuples
+        Each tuple represents an edge (u, v, w)
+        
+    Returns:
+    list of tuples : edges sorted by weight
+    """
+    return sorted(edges, key=lambda x: x[2])
+
+
+# --- Example Usage ---
+edges = [(0, 1, 4), (0, 2, 3), (1, 2, 1)]
+sorted_edges = sort_edges_by_weight(edges)
+print(sorted_edges)
+
